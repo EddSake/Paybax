@@ -1,5 +1,5 @@
 name: Deply de la pagina
-on: 
+on:
   push:
     - main
 jobs:
@@ -12,4 +12,5 @@ jobs:
     - name: Deploy
       uses: JasmesIves/github-pages-deploy-action@4.1.4
       with:
-        branch:
+        branch: gh-pages # The branch the action should deplay to.
+        folder: . # The folder the action should deplay.
